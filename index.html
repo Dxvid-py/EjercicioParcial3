@@ -6,6 +6,9 @@
     <title>Mis Videojuegos Favoritos</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1a1a2e; }
+        ::-webkit-scrollbar-thumb { background: #e94560; border-radius: 10px; }
         body { background-color: #1a1a2e; color: #ffffff; font-family: 'Poppins', sans-serif; margin: 0; }
         .game-card { background: #16213e; border: 2px solid #0f3460; border-radius: 10px; overflow: hidden; transition: 0.3s; }
         .game-card:hover { border-color: #e94560; transform: scale(1.02); }
@@ -13,7 +16,6 @@
         .game-info { padding: 20px; }
         .game-info h3 { font-family: 'Press Start 2P'; font-size: 12px; color: #e94560; margin: 0 0 15px; }
         #grid-juegos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 40px; }
-        @media (max-width: 600px) { #grid-juegos { padding: 20px; gap: 20px; } }
     </style>
 </head>
 <body>
