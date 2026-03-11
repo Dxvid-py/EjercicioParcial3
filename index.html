@@ -12,14 +12,15 @@
         .game-card img { width: 100%; height: 250px; object-fit: cover; }
         .game-info { padding: 20px; }
         .game-info h3 { font-family: 'Press Start 2P'; font-size: 12px; color: #e94560; margin: 0 0 15px; }
-        .game-info p { font-size: 14px; line-height: 1.6; color: #a2a8d3; }
+        #grid-juegos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 40px; }
+        @media (max-width: 600px) { #grid-juegos { padding: 20px; gap: 20px; } }
     </style>
 </head>
 <body>
     <nav style="background: #16213e; padding: 20px; text-align: center; border-bottom: 3px solid #e94560;">
         <span style="font-family: 'Press Start 2P', cursive; color: #e94560; font-size: 14px;">GameCenter</span>
     </nav>
-    <h1 style="text-align: center; margin-top: 40px; font-family: 'Press Start 2P'; font-size: 20px;">Top 5 Videojuegos</h1>
-    <div id="grid-juegos" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 40px;"></div>
+    <h1 style="text-align: center; margin-top: 40px; font-family: 'Press Start 2P'; font-size: 20px;">TOP 5 VIDEOJUEGOS</h1>
+    <div id="grid-juegos"></div>
 </body>
 </html>
